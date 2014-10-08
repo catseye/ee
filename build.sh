@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/sh -x
 
-gcc -DHAS_STDLIB -DHAS_UNISTD -D'__FBSDID(x)=' ee.c -o ee -lcurses
+gcc -DHAS_STDLIB -DHAS_UNISTD -D'__FBSDID(x)=' -D'fixterm()=' ee.c -o ee -lcurses
